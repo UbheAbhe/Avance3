@@ -1,0 +1,39 @@
+/* CONFIGURACION GENERAL, NO TOCAR */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    font-size: 15px;
+  }
+  .home {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    
+  }
+    .in-flex {
+      flex: 1;
+      min-width: 300px;
+      padding: 20px;
+      flex-direction: column;
+      align-items: flex-start;
+      
+  }
+    .in-flex:first-child {
+        flex: 2;
+        background-color: rgb(255, 255, 255);
+        margin: 20px;
+        margin-bottom: 0px;
+        display: block;
+    }
+
+
+  #tablaplanta th,
+  #tablaplanta td {
+    border: 1px solid black !important;
+    
+  }
+    .navbar {
+        background-color: #28a745 !important;
+    }

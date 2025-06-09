@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <html xmlns:th="http://www.thymeleaf.org">
+        <title>Vivero Verde | Seleccion</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="Styles.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+        <link rel="stylesheet" th:href="@{/css/CSSGaleria.css}">
+    </head>
+    <body class="body">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+            <div class="container">
+                <a class="navbar-brand" href="#">Vivero Verde</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="/index">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="/galeria">Galeria</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="/InfoDetallada">InfoDetallada</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="/Seleccion">Seleccion</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section>
+            <div class="cartas-container">
+                    <!-- FITTONIA -->
+                    <div class="carta">
+                        <h3 id="tittle_card">Fittonia</h3>
+                        <img th:src="@{/ImgWeb/1)Fittonia.jpg}" alt="Fittonia">
+                        <hr>
+                        <button onclick="toggleInfo(this)">Ver más / Ocultar</button>
+                        <div class="info">
+                            <h4 id="tittle_card">Información:</h4>
+                            <hr>
+                            <h1 id="text_card">
+                                <ul>
+                                    <li><strong>Tamaño:</strong> Pequeña, ideal para escritorios.</li>
+                                    <li><strong>Color:</strong>  Hojas verdes con nervaduras en rojo, blanco o rosa.</li>
+                                    <li><strong>Luz:</strong> Indirecta.</li>
+                                    <li><strong>Riego:</strong> Frecuente, necesita alta humedad.</li>
+                                    <li><strong>Dificultad:</strong> Alta. Se desmaya si se seca.</li>
+                                </ul>
+                                <em>"Drama en miniatura. Revivo, pero solo si me ruegas."</em></h1>
+                        </div>
+                    </div>
+                    <!-- Calathea -->
+                    <div class="carta">
+                        <h3 id="tittle_card">Calathea</h3>
+                        <img th:src="@{/ImgWeb/2)Calathea.jpg}" alt="Calathea">
+                        <hr>
+                        <button onclick="toggleInfo(this)">Ver más / Ocultar</button>
+                        <div class="info">
+                            <h4 id="tittle_card">Información:</h4>
+                            <hr>
+                            <h1 id="text_card"><ul>
+                                <li><strong>Tamaño:</strong> Pequeña a mediana.</li>
+                                <li><strong>Color:</strong>  Hojas con patrones únicos en verde, morado y rosa.</li>
+                                <li><strong>Luz:</strong> Indirecta, sin sol directo.</li>
+                                <li><strong>Riego:</strong> Regular, con agua purificada.</li>
+                                <li><strong>Dificultad:</strong> Alta. Odia cambios bruscos.</li>
+                            </ul>
+                            <em>"No me mires mucho... solo adórame desde lejos."</em></h1>
+                        </div>
+                    </div>
+                    <!-- Lithops -->
+                    <div class="carta">
+                        <h3 id="tittle_card">Lithops</h3>
+                        <img th:src="@{/ImgWeb/3)Lithops.jpg}" alt="Lithops">
+                        <hr>
+                        <button onclick="toggleInfo(this)">Ver más / Ocultar</button>
+                        <div class="info">
+                            <h4 id="tittle_card">Información:</h4>
+                            <hr>
+                            <h1 id="text_card"><ul>
+                                <li><strong>Tamaño:</strong> Muy pequeña.</li>
+                                <li><strong>Color:</strong>  Tonos tierra, grisáceos o verdosos.</li>
+                                <li><strong>Luz:</strong> Mucha luz solar.</li>
+                                <li><strong>Riego:</strong> Muy escaso. Solo cuando la tierra está seca.</li>
+                                <li><strong>Dificultad:</strong> Alta. El exceso de cuidado las mata.</li>
+                            </ul>
+                            <em>"Parezco piedra... pero soy arte vivo en miniatura."</em></h1>
+                        </div>
+                    </div>
+                    <!-- Mimoza_Pudica -->
+                    <div class="carta">
+                        <h3 id="tittle_card">Mimoza Púdica</h3>
+                        <img th:src="@{/ImgWeb/4)Mimoza_Pudica.jpg}" alt="Mimoza_Pudica">
+                        <hr>
+                        <button onclick="toggleInfo(this)">Ver más / Ocultar</button>
+                        <div class="info">
+                            <h4 id="tittle_card">Información:</h4>
+                            <hr>
+                            <h1 id="text_card"><ul>
+                                <li><strong>Tamaño:</strong> Pequeña.</li>
+                                <li><strong>Color:</strong>  Verde brillante con flores rosadas.</li>
+                                <li><strong>Luz:</strong> Mucha luz indirecta.</li>
+                                <li><strong>Riego:</strong> Regular, tierra siempre ligeramente húmeda.</li>
+                                <li><strong>Dificultad:</strong> Media-alta. Sensible al tacto y clima.</li>
+                            </ul>
+                            <em>"No me toques… Que me matas."</em></h1>
+                        </div>
+                    </div>
+                    <!-- Orquídea_Miniatura -->
+                    <div class="carta">
+                        <h3 id="tittle_card">Orquídea Miniatura</h3>
+                        <img th:src="@{/ImgWeb/5)Orquídea_Miniatura.jpg}" alt="Orquídea_Miniatura">
+                        <hr>
+                        <button onclick="toggleInfo(this)">Ver más / Ocultar</button>
+                        <div class="info">
+                            <h4 id="tittle_card">Información:</h4>
+                            <hr>
+                            <h1 id="text_card"><ul>
+                                <li><strong>Tamaño:</strong> Compacta.</li>
+                                <li><strong>Color:</strong>  Flores de diversos colores vibrantes.</li>
+                                <li><strong>Luz:</strong> Luz indirecta brillante.</li>
+                                <li><strong>Riego:</strong> Semanal. Necesita buena ventilación.</li>
+                                <li><strong>Dificultad:</strong> Alta. Exige atención constante.</li>
+                            </ul>
+                            <em>"Belleza diminuta, cuidados gigantes."</em></h1>
+                        </div>
+                    </div>
+                    <!-- cheveria_Perle_von_Nurnberg -->
+                    <div class="carta">
+                        <h3 id="tittle_card">Echeveria Perle von Nurnberg</h3>
+                        <img th:src="@{/ImgWeb/7)Echeveria_Perle_von_Nurnberg.jpg}" alt="Echeveria_Perle_von_Nurnberg">
+                        <hr>
+                        <button onclick="toggleInfo(this)">Ver más / Ocultar</button>
+                        <div class="info">
+                            <h4 id="tittle_card">Información:</h4>
+                            <hr>
+                            <h1 id="text_card"><ul>
+                                <li><strong>Tamaño:</strong> Pequeña (roseta).</li>
+                                <li><strong>Color:</strong>  Tonos lavanda, rosa pálido, gris.</li>
+                                <li><strong>Luz:</strong> Sol directo o luz muy brillante.</li>
+                                <li><strong>Riego:</strong> Espaciado, solo cuando esté seca.</li>
+                                <li><strong>Dificultad:</strong> Alta. Muy sensible al exceso de agua.</li>
+                            </ul>
+                            <em>"Soy hermosa, pero no me toques mal o me desarmo."</em></h1>
+                        </div>
+                    </div>
+                    <!-- oxalis_triangularis -->
+                    <div class="carta">
+                        <h3 id="tittle_card">Oxalis Triangularis</h3>
+                        <img th:src="@{/ImgWeb/8)oxalis_triangularis.jpg}" alt="oxalis_triangularis">
+                        <hr>
+                        <button onclick="toggleInfo(this)">Ver más / Ocultar</button>
+                        <div class="info">
+                            <h4 id="tittle_card">Información:</h4>
+                            <hr>
+                            <h1 id="text_card"><ul>
+                                <li><strong>Tamaño:</strong> Pequeña.</li>
+                                <li><strong>Color:</strong>  Púrpura brillante con flores rosadas o blancas.</li>
+                                <li><strong>Luz:</strong> Luz media a brillante indirecta.</li>
+                                <li><strong>Riego:</strong> Moderado. Dormancia natural cada ciertos meses.</li>
+                                <li><strong>Dificultad:</strong> Media-alta. Tiene cambios de humor estacionales.</li>
+                            </ul>
+                            <em>"Hoy florezco. Mañana... quién sabe."</em></h1>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+
+
+
+        <script>
+        function toggleInfo(button) {
+            let carta = button.parentElement; // Obtiene la carta del botón presionado
+            let info = carta.querySelector(".info");
+            const screenWidth = window.innerWidth;
+
+            if (screenWidth < 1000) {
+                if (info.style.display === "none" || info.style.display === "") {
+                    info.style.display = "block";
+                } else {
+                    info.style.display = "none";
+                }
+            } else {
+                // muestra la info de la carta
+                if (info.style.display === "none" || info.style.display === "") {
+                    info.style.display = "block";
+                    carta.style.transform = "translateX(-160px)";
+                    // y ahora se oculta la info
+                } else {
+                    // Oculta la información y vuelve la carta a su posición original
+                    info.style.display = "none";
+                    carta.style.transform = "translateX(0)";
+                }
+            }
+        }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand" href="#">Vivero Verde</a>
+        </div>
+    </nav>  
+</html>

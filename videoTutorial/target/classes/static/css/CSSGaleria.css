@@ -1,0 +1,115 @@
+/*Configuracion de las clases de la vista: GALERIA*/
+/* Contenedor principal */
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #28a745, #a8e063);
+    margin: 15px 0;
+  }
+  
+.body{
+    background-image: url(/ImgWeb/Fondo1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.navbar {
+    background-color: #28a745 !important;
+}
+.cartas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+/* diseño de cada carta */
+.carta {
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(130, 130, 130);
+    padding: 20px;
+    text-align: center;
+    width: 400px;
+    position: relative;
+}
+/* imgs dentro de las cartas */
+.carta img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+/* boton dentro de la carta */
+.carta button {
+    background-color: rgb(56, 104, 42);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px; /* agrega espacio entre la carta y el boton */
+}
+/* info oculta por defecto */
+.info {
+    display: none;
+    width: 400px;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(80, 80, 80);
+    position: absolute;
+    left: 420px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* contenedor para la carta y su información */
+.carta-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+/*titulo de carta*/
+#tittle_card{
+    text-align: center !important;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    text-align: left;
+    color: #000000;
+    font-size: 20px;
+}
+/*texto de la carta*/
+#text_card{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: #000000;
+    font-size: 18px;
+    text-align: justify;
+}
+
+/* Confifuracion para cuando la pantalla es menos a 1000px */
+@media (max-width: 1000px) {
+    .carta-container {
+        width: 95%;
+    }
+
+    .carta {
+        width: 100%;
+        margin: 20px;
+    }
+    .info {
+        position: static;
+        width: 100%;
+        margin-top: 20px;
+        transform: translateY(0);
+    }
+    /* boton debajo del contenido */
+    .carta button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+    
+

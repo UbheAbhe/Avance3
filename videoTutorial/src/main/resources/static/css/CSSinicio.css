@@ -1,0 +1,43 @@
+body {
+  background-image: url(/ImgWeb/Fondo1.jpg);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2, h3, h5 {
+  color: #2e7d32;
+}
+
+.card-title {
+  color: #388e3c;
+}
+
+.card-text {
+  font-size: 0.95rem;
+}
+
+.carousel-inner img {
+  height: 400px;
+  object-fit: cover;
+}
+.navbar {
+  background-color: #28a745 !important;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .carousel-inner img {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-inner img {
+    max-height: 200px;
+  }
+}

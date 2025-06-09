@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <html xmlns:th="http://www.thymeleaf.org">
+    <link rel="stylesheet" th:href="@{/css/CSSinfoDetallada.css}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+
+    <title>Descripcion General</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Vivero Verde</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="/index">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/galeria">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/InfoDetallada">InfoDetallada</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/Seleccion">Seleccion</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav>
+        <div class="container-fluid img-fluid w-100 mt-3cm p-0">
+            <img th:src="@{/ImgWeb/gato.png}" alt="planta" class="img-fluid w-100 img-banner" style="height: 200px; object-fit: cover;">
+        </div>
+    </nav>
+    <section class="">
+        <div class="in-flex fst-italic fw-bold  text-center ms-3">
+                     <h1>CUIDADO DE PLANTAS PARA TENER UN MEJOR HOGAR</h1>
+                     <p>Las plantas son elementos fundamentales en nuestro entorno natural y en nuestra vida diaria
+                        Desde mi experiencia trabajando con estas maravillas verdes, he aprendido a apreciar su belleza, 
+                        diversidad y los beneficios que aportan a nuestro bienestar.
+                    </p>
+        </div>
+        <div class="in-flex fst-italic fw-bold  text-center ms-3">
+            <h1 >¿ COMO PODEMOS CUIDAR NUESTRAS PLANTAS ?</h1>
+            <p class="mb-0">Para cuidar una planta adecuadamente, es crucial proporcionarle la cantidad correcta de agua,asegurándose de que no esté ni demasiado húmeda ni demasiado seca. </p>       
+            <p class="mb-0">También es importante mantenerla limpia, evitando el polvo que puede obstruir su respiración, y proporcionar la cantidad de luz adecuada según sus necesidades. Además,</p>
+            <p class="mb-0">es fundamental conocer las necesidades específicas de cada planta y evitar situaciones como el calor excesivo o la exposición directa al sol sin el período de adaptación necesario </p>  
+      
+        </div>
+        <div class="in-flex fst-italic fw-bold  text-center ms-3">
+            <h3>¿ CADA CUANTO DEBO DE REGAR MI PLANTA ?</h3>
+            <p class="mb-0">La pregunta del millón, el dolor de cabeza de muchos y el pasatiempos de otros.
+                ¿Cuántas veces por semana hay que regar las plantas para que no se sequen? </p>
+                <P class="mb-0">    En principio,
+                 la cantidad precisa de agua depende mucho de la especie. Sin embargo, existen algunas reglas generales a tener en cuent</p>
+                 <P class="mb-0 text-info">Planta Inferior:</P>
+                 <P class="mb-0  ">Según los expertos, una vez por semana es la cantidad promedio que requiere una planta de interior</P>
+                 <P class="mb-0 text-info">Planta de exterior:</P>
+                 <P class="mb-0">si es una planta joven va a necesitar más de un riego por semana para poder crecer y si le da sol necesitara mas riego</P>
+                 <P class="mb-0 text-info"> Riego por estación:</P>
+                 <P class="mb-0">en primavera y verano la norma básica es regar las plantas una vez por semana, pero cuando es estacion de frio regar cada 10 o 15 dias</P>
+                 <P class="mb-0 text-info">Riego por horario:</P>
+                 <P class="mb-0">   EL mejor horario para regar las plantas con agua fría al amanecer o por la noche para evitar la evaporación del líquido con el sol.</P>
+        </div>
+        <div class="in-flex fst-italic fw-bold  text-center ms-3">
+            <h3>¿ QUE TIPO DE TIERRA SE DEBE DE USAR PARA LAS PLANTAS ?</h3>
+                <P class="mb-0">Siendo concisos y directos, la mejor tierra para plantas es la tierra orgánica. No hay nada como el producto más natural para conseguir </P>
+                <P class="mb-0">los efectos más saludables y equilibrados en la planta. Uno de los productos de tierra orgánica más ideales son la turba</P>
+      </div>
+      <div class="in-flex fst-italic fw-bold  text-center ms-3">
+        <h3>¿ QUE TIPO DE LUZ NECESITA( DIRECTA, INDIRECTA, SOMBRA) ?</h3>
+        <P class="mb-0">La respuesta a qué tipo de luz necesita depende de lo que se está iluminando. Para plantas, la luz directa es ideal para especies que necesitan mucha luz,</P>
+        <P class="mb-0"> mientras que la luz indirecta es mejor para aquellas que prefieren sombra o menos luz directa. Para interiores,  la luz directa puede ser más adecuada </P>
+        <P class="mb-0"> para áreas de trabajo o para resaltar elementos, mientras que la luz indirecta crea un ambiente más suave y acogedor. </P>
+      </div>
+        </div>
+    </section>
+
+    <table class="table table-bordered mx-auto" style="width: 70%;" id="tablaplanta">
+            <tr>
+                <th>Planta</th>
+                <th>nose</th>
+                <th>nose</th>
+                <th>nose</th>
+            </tr>
+        </thead>
+        <tbody id="elemtonsplantas">
+            <tr>
+                <td>nombre</td>
+                <td>Informacion</td>
+                <td>Informacion</td>
+                <td>informacion</td>
+            </tr>
+            <tr>
+                <td>nombre</td>
+                <td>Informacion</td>
+                <td>Informacion</td>
+                <td>informacion</td>
+            </tr>
+
+            <tr>
+                <td>nombre</td>
+                <td>Informacion</td>
+                <td>Informacion</td>
+                <td>informacion</td>
+            </tr>
+
+            <tr>
+                <td>nombre</td>
+                <td>Informacion</td>
+                <td>Informacion</td>
+                <td>informacion</td>
+            </tr>
+            <tr>
+                <td>nombre</td>
+                <td>Informacion</td>
+                <td>Informacion</td>
+                <td>informacion</td>
+            </tr>
+        </tbody>
+      </table>
+      <!-- <footer class=" text-white text-center py-3 mt-auto " style="min-height: 100px; background-color: limegreen;">
+
+        <div class="container">
+            <div class="row justify-content-between">
+
+        <div class="col-12 col-md-5 text-center text-md-start mb-4 mb-md-0">    
+        <ul class="list-unstyled text-end" style=" right: 1500px;">
+            <li class="mb-1"><a href="#" style="color: black; text-decoration:none;">Mas sobre las plantas</a></li>
+            <li class="mb-1"><a href="#" style="color: black; text-decoration:none;">Mejoras Plantas</a></li>
+            <li class="mb-1"><a href="#" style="color: black; text-decoration:none;">Nosotros</a></li>
+        </ul>
+        </div>
+        <div class="col-12 col-md-6 text-md-end">
+        <ul class="list-unstyled text-end" style=" right: 700px;">
+        
+            <li class="mb-1"><a href="#" style="color: black; text-decoration:none;">Libro de Reclamaciones</a></li>
+            <li class="mb-1"><a href="#" style="color: black; text-decoration: none;">Reportar</a></li>
+            <li class="mb-1"><a href="#" style="color: black; text-decoration: none;">Reglas</a></li>
+
+        </ul>
+        </div>
+            </div>
+        </div>
+    </footer> -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Vivero Verde</a>
+            <li class="mb-1"><a href="#" style="color: black; text-decoration:none;">Libro de Reclamaciones</a></li>
+            <li class="mb-1"><a href="#" style="color: black; text-decoration: none;">Reportar</a></li>
+            <li class="mb-1"><a href="#" style="color: black; text-decoration: none;">Reglas</a></li>
+            <li class="mb-1"><a href="#" style="color: black; text-decoration:none;">Mas sobre las plantas</a></li>
+            <li class="mb-1"><a href="#" style="color: black; text-decoration:none;">Mejoras Plantas</a></li>
+            <li class="mb-1"><a href="#" style="color: black; text-decoration:none;">Nosotros</a></li>
+        </div>
+    </nav>  
+</body>
+</html>

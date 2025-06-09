@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <html xmlns:th="http://www.thymeleaf.org">
+        <title>Vivero Verde | Seleccion</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+        <link rel="stylesheet" th:href="@{/css/CSSseleccion.css}">
+    </head>
+    <body class="body">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+            <div class="container">
+                <a class="navbar-brand" href="#">Vivero Verde</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="/index">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="/galeria">Galeria</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="/InfoDetallada">InfoDetallada</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="/Seleccion">Seleccion</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section>
+            <div class="container">
+              <div class="row">
+          
+                <div class="col-12 col-md-6 col-xl-4">
+                  <div class="carta">
+                    <h3 id="tittle_card">Fittonia</h3>
+                    <img th:src="@{/ImgWeb/1)Fittonia.jpg}" alt="Fittonia">
+                    <hr>
+                    <div class="info">
+                      <ul>
+                        <strong>Precio:</strong> S/50
+                      </ul>
+                    </div>
+                    <hr>
+                    <button onclick="">Adquirir</button>
+                  </div>
+                </div>
+          
+                <div class="col-12 col-md-6 col-xl-4">
+                  <div class="carta">
+                    <h3 id="tittle_card">Calathea</h3>
+                    <img th:src="@{/ImgWeb/2)Calathea.jpg}" alt="Calathea">
+                    <hr>
+                    <div class="info">
+                      <ul>
+                        <strong>Precio:</strong> S/90
+                      </ul>
+                    </div>
+                    <hr>
+                    <button onclick="">Adquirir</button>
+                  </div>
+                </div>
+          
+                <div class="col-12 col-md-6 col-xl-4">
+                  <div class="carta">
+                    <h3 id="tittle_card">Lithops</h3>
+                    <img th:src="@{/ImgWeb/3)Lithops.jpg}" alt="Lithops">
+                    <hr>
+                    <div class="info">
+                      <ul>
+                        <strong>Precio:</strong> S/70
+                      </ul>
+                    </div>
+                    <hr>
+                    <button onclick="">Adquirir</button>
+                  </div>
+                </div>
+          
+                <div class="col-12 col-md-6 col-xl-4">
+                  <div class="carta">
+                    <h3 id="tittle_card">Mimoza Púdica</h3>
+                    <img th:src="@{/ImgWeb/4)Mimoza_Pudica.jpg}" alt="Mimoza_Pudica">
+                    <hr>
+                    <div class="info">
+                      <ul>
+                        <strong>Precio:</strong> S/60
+                      </ul>
+                    </div>
+                    <hr>
+                    <button onclick="">Adquirir</button>
+                  </div>
+                </div>
+          
+                <div class="col-12 col-md-6 col-xl-4">
+                  <div class="carta">
+                    <h3 id="tittle_card">Orquídea Miniatura</h3>
+                    <img th:src="@{/ImgWeb/5)Orquídea_Miniatura.jpg}" alt="Orquídea_Miniatura">
+                    <hr>
+                    <div class="info">
+                      <ul>
+                        <strong>Precio:</strong> S/90
+                      </ul>
+                    </div>
+                    <hr>
+                    <button onclick="">Adquirir</button>
+                  </div>
+                </div>
+          
+                <div class="col-12 col-md-6 col-xl-4">
+                  <div class="carta">
+                    <h3 id="tittle_card">Echeveria Perle von Nurnberg</h3>
+                    <img th:src="@{/ImgWeb/7)Echeveria_Perle_von_Nurnberg.jpg}" alt="Echeveria_Perle_von_Nurnberg">
+                    <hr>
+                    <div class="info">
+                      <ul>
+                        <strong>Precio:</strong> S/70
+                      </ul>
+                    </div>
+                    <hr>
+                    <button onclick="">Adquirir</button>
+                  </div>
+                </div>
+          
+                <div class="col-12 col-md-6 col-xl-4">
+                  <div class="carta">
+                    <h3 id="tittle_card">Oxalis Triangularis</h3>
+                    <img th:src="@{/ImgWeb/8)oxalis_triangularis.jpg}" alt="oxalis_triangularis">
+                    <hr>
+                    <div class="info">
+                      <ul>
+                        <strong>Precio:</strong> S/75
+                      </ul>
+                    </div>
+                    <hr>
+                    <button onclick="">Adquirir</button>
+                  </div>
+                </div>
+          
+              </div>
+            </div>
+          </section>
+          
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand" href="#">Vivero Verde</a>
+        </div>
+    </nav>  
+</html>
